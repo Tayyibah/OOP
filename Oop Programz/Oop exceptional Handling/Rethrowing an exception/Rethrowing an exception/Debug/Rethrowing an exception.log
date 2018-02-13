@@ -1,0 +1,11 @@
+﻿Build started 9/23/2015 12:15:21 AM.
+     1>Project "D:\Visual Studio n other docs\Visual Studio 2012\Projects\exceptional Handling\Rethrowing an exception\Rethrowing an exception\Rethrowing an exception.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt driver.cpp
+         driver.cpp
+     1>d:\visual studio n other docs\visual studio 2012\projects\exceptional handling\rethrowing an exception\rethrowing an exception\driver.cpp(15): error C2312: 'std::string' : is caught by 'std::string' on line 11
+     1>Done Building Project "D:\Visual Studio n other docs\Visual Studio 2012\Projects\exceptional Handling\Rethrowing an exception\Rethrowing an exception\Rethrowing an exception.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:09.05

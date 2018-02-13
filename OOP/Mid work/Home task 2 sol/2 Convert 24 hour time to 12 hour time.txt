@@ -1,0 +1,69 @@
+#include <iostream>
+using namespace std;
+
+void getTime(int &hours, int &minutes);
+char convertTime(int& hours);
+void printTime(int hours, int minutes, char display);
+
+int main()
+
+{
+	int hours = 0;
+	int minutes = 0;
+	char display = ' ';
+	cout << "---------------------------------------------------------" << endl;
+	cout << "            24-Hour to 12-Hour Time Converter            " << endl;
+	cout << "---------------------------------------------------------" << endl;
+
+	getTime(hours, minutes);
+
+	display = convertTime(hours);
+
+	printTime(hours, minutes, display);
+	
+	return 0;
+
+}
+
+void getTime(int &hours, int &minutes)
+{
+	cout << "Please enter the hour and minutes in 24-Hour format" << endl;
+input:
+	cin >> hours;
+	cin >> minutes;
+	if (hours <= 24 && hours >=0 && minutes <= 60 && minutes >= 0)
+		return;
+	else 
+	{
+		cout << "Error! Please enter a valid time.\n";
+		goto input;
+	}
+}
+
+char convertTime(int& hours)
+{
+	if(hours > 12)
+	{
+		hours -= 12;
+		return 'P';
+	}
+	else
+	{
+		return 'A';
+	}
+	
+}
+
+void printTime(int hours, int minutes, char display)
+{
+	if (minutes < 10)
+	{
+		cout << "The time converted to a 12 hour format is: "
+			 << hours << ":0" << minutes << " "<< display << "M" << endl;
+	}
+	else
+	{
+		cout << "The time converted to a 12 hour format is: "
+			 << hours << ":" << minutes << " "<< display << "M" << endl;
+	}
+}

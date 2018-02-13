@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+struct Rational 
+{
+	int a;
+	int b;
+	int res;
+};
+
+void addRational();
+	Rational n;
+
+int main()
+{
+	cout<<"Enter num one:";
+	cin>>n.a;
+	cout<<"Enter num two:";
+	cin>>n.b;
+	addRational();
+	cout<<"There addition is "<<n.res<<endl;
+	
+	return 0;
+}
+
+
+void addRational( )
+{
+	n.res=n.a + n.b;
+}

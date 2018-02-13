@@ -1,0 +1,109 @@
+#include<iostream>
+using namespace std;
+class Time
+{
+private:
+	int hour ;
+	int min;
+	int sec;
+public :
+void setHour(int h)
+{
+	if (h>=0 && h<=23)
+	{
+		hour=h;
+	}
+}
+void setMinute (int m)
+{
+	if (m<=59 && m>=0)
+	{
+		min=m;
+	}
+}
+void setSec(int s)
+{
+	if (s <= 59 && s >= 0)
+		sec = s ;
+}
+void setTime( int h, int m, int s)
+{
+	setHour (h);
+	setMinute (m);
+	setSec (s);
+}
+int getHour ()
+{
+	return hour;
+}
+int getMin ()
+{
+	return min;
+}
+int getSec ()
+{
+	return sec;
+}
+void printTwentHyFourHourFormat ()
+{
+	getHour();
+	getMin();
+	getSec();
+}
+void printTwelveHourFormat()
+{
+	if (getHour()>11)
+	{
+		hour=hour-12;
+	}
+	getMin();
+	getSec() ;
+}
+void incSec(int i=1)
+{
+	sec=sec+i;
+	if (sec>59)
+		min=min+sec%60;
+	if (min>59)
+		hour=hour+min%60;
+	if (hour>23)
+		hour=hour%24;
+	min=min%60;
+	sec=sec%60;
+}
+void incMin(int i=1)
+{
+	min=min+i;
+	if (min>59)
+		hour=hour+min%60;
+	if (hour>23)
+	{
+		hour=hour%24;
+	}
+	min=min%60;
+}
+void incHour(int i=1)
+{
+	hour=hour+i;
+	
+	if (hour>23)
+		hour=hour%24;
+}
+};
+int main()
+{
+	Time t;
+	t.setTime(4 , 5 , 6);
+	cout<<t.getHour()<<":"<<t.getMin()<<":"<<t.getSec()<<endl;
+	t.printTwentHyFourHourFormat();
+	cout<<"24 hour format:"<<t.getHour()<<":"<<t.getMin()<<":"<<t.getSec()<<endl;
+	t.printTwelveHourFormat();
+	cout<<"12 hour format :"<<t.getHour()<<":"<<t.getMin()<<":"<<t.getSec()<<endl;
+	t.incHour(6);
+	cout<<"Increment in hour :"<<t.getHour()<<":"<<t.getMin()<<":"<<t.getSec()<<endl;
+	t.incSec(5);
+	cout<<"Increment in sec:"<<t.getHour()<<":"<<t.getMin()<<":"<<t.getSec()<<endl;
+	t.incMin(5);
+	cout<<"Increment in minute is :"<<t.getHour()<<":"<<t.getMin()<<":"<<t.getSec()<<endl;
+	return 0;
+}

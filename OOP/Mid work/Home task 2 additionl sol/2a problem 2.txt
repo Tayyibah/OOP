@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int x,y;
+	double z;			//input data: 37  86.56  32
+	cin >> x >> y >> z;
+	cout<<x<<" "<<y<<" "<<z<<endl<<endl;
+	cin >> x >> z >> y;
+	cout<<x<<" "<<y<<" "<<z<<endl<<endl;
+	cin >> z >> x >> y;
+	cout<<x<<" "<<y<<" "<<z<<endl<<endl;
+	return 0;
+}

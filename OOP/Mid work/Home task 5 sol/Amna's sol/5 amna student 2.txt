@@ -1,0 +1,79 @@
+#include<iostream>
+using namespace std;
+class Student
+{
+private:
+	char rollNo[11]; //roll no of student like BSEF14M001
+	int semester; //semester number
+	char name[100]; //name of student
+	float CGPA;
+public:
+	void setRollNo(char*s)
+	{
+		if(isValidRollNo(s+7))
+			strcpy(rollNo,s);
+	}
+	void setSemester(int s)
+	{
+		if(s>=1&&s<=8)
+			semester=s;
+	}
+	void setName(char*n)
+	{
+		strcpy(name,n);
+	}
+	void setCGPA(float cgpa)
+	{
+		if(cgpa>=0.0&&cgpa<=4.0)
+			CGPA=cgpa;
+	}
+	bool isValidRollNo(char * s)
+	{
+		int r;
+		r=*s-'0';
+		r=r*10;
+		r+=*(s+1)-'0';
+		r=r*10;
+		r+=*(s+2)-'0';
+		
+		if(r>=001&&r<=999 && *(s+3)=='\0' )
+			return true;
+		return false;
+	}
+	const char * getRollNo()
+	{
+		return rollNo;
+	}
+	int getSemester()
+	{
+		return semester;
+	}
+	const char * getName()
+	{
+		return name;
+	}
+	float getCGPA()
+	{
+		return CGPA;
+	}
+	bool isStudentDropOut()
+	{
+		if(semester==1&&CGPA<1.5||semester!=1&&CGPA<1.7)
+			return true;
+		return false;
+	}
+	bool isStudentOnProbation()
+	{
+		if(semester==1&&CGPA>=1.5&&CGPA<2||semester!=1&&CGPA>=1.7&&CGPA<2)
+			return true;
+		return false;
+	}
+};
+int main()
+{
+	Student s;
+	s.setRollNo("BSEF14A1000");
+	const char * a=s.getRollNo();
+	cout<<a;
+	return 0;
+}

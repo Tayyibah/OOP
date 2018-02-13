@@ -1,0 +1,76 @@
+#include<iostream>
+using namespace std;
+
+class Employee
+{
+private:
+	char firstName[100];
+	char lastName[100];
+	int monthlySalary;
+	int yearlySalary;
+	float percentage ;
+public:
+	void setFirstName(char*c)
+	{
+		strcpy(firstName,c);
+	}
+	void setLastName( char * c)
+	{
+		strcpy(lastName, c);
+	}
+	char * getFirstName()
+	{
+		return firstName;
+	}
+	char * getLastName()
+	{
+		return lastName;
+	}
+	void setSalaray(int s)
+	{
+		monthlySalary=s;
+	}
+	int getSalary()
+	{
+		return monthlySalary;
+	}
+
+
+	float calcYearlySalary()
+	{
+		yearlySalary = monthlySalary * 12 ;
+		return yearlySalary ;
+	}
+
+
+	float increaseSalary()
+	{
+		percentage = 0.1 * yearlySalary ;
+		yearlySalary = yearlySalary + percentage ;
+		return yearlySalary;
+	}
+};
+int main()
+{
+	Employee e1;
+	Employee e2;
+	e1.setFirstName("Ammara");
+	e1.setLastName("Khalid");
+	e2.setFirstName("Tuba");
+	e2.setLastName("Khalid");
+	e1.setSalaray(5000);
+	e2.setSalaray(6000);
+	cout<<e1.getFirstName()<<"  "<<e1.getLastName()<<endl;
+	cout<<"Salary of First employee is : " <<e1.getSalary()<<endl;
+	cout<<"Yearly Salary of first Employee is : "<<e1.calcYearlySalary()<<endl;
+	cout<<"Yearly Salary after 10% increase is : "<<e1.increaseSalary()<<endl<<endl<<endl;
+
+	cout<<e2.getFirstName()<<"  "<<e2.getLastName()<<endl;
+	cout<<"Salary of Second employee is : " <<e2.getSalary()<<endl;
+	cout<<"Yearly Salary of second Employee is : "<<e2.calcYearlySalary()<<endl;
+	cout<<"Yearly Salary after 10% increase is : "<<e2.increaseSalary()<<endl;
+
+	return 0;
+
+
+}

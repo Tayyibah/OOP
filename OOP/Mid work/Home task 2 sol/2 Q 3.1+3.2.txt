@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+struct Rational
+{
+	int numerator;
+	int denominator;
+};
+
+void inputRational(Rational & );
+int main()
+{
+	Rational i;
+	inputRational(i);
+	cout<<"The num in numerator:"<<i.numerator<<endl;
+	cout<<"The num in denominator:"<<i.denominator<<endl;
+	
+	return 0;
+}
+
+
+void inputRational(Rational &i )
+{
+	cin>>i.numerator>>i.denominator;
+}

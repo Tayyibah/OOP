@@ -1,0 +1,35 @@
+﻿Build started 5/23/2014 12:23:48 AM.
+     1>Project "E:\Amna\lab 9\task1\task1\task1.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\task1.unsuccessfulbuild".
+       ClCompile:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt driver.cpp event.cpp
+         event.cpp
+     1>e:\amna\lab 9\task1\task1\event.cpp(9): error C2572: 'Event::Event' : redefinition of default parameter : parameter 6
+                 e:\amna\lab 9\task1\task1\event.h(13) : see declaration of 'Event::Event'
+     1>e:\amna\lab 9\task1\task1\event.cpp(9): error C2572: 'Event::Event' : redefinition of default parameter : parameter 5
+                 e:\amna\lab 9\task1\task1\event.h(13) : see declaration of 'Event::Event'
+     1>e:\amna\lab 9\task1\task1\event.cpp(9): error C2572: 'Event::Event' : redefinition of default parameter : parameter 4
+                 e:\amna\lab 9\task1\task1\event.h(13) : see declaration of 'Event::Event'
+     1>e:\amna\lab 9\task1\task1\event.cpp(9): error C2572: 'Event::Event' : redefinition of default parameter : parameter 3
+                 e:\amna\lab 9\task1\task1\event.h(13) : see declaration of 'Event::Event'
+     1>e:\amna\lab 9\task1\task1\event.cpp(9): error C2572: 'Event::Event' : redefinition of default parameter : parameter 2
+                 e:\amna\lab 9\task1\task1\event.h(13) : see declaration of 'Event::Event'
+     1>e:\amna\lab 9\task1\task1\event.cpp(9): error C2572: 'Event::Event' : redefinition of default parameter : parameter 1
+                 e:\amna\lab 9\task1\task1\event.h(13) : see declaration of 'Event::Event'
+         driver.cpp
+     1>e:\amna\lab 9\task1\task1\event.h(8): error C2146: syntax error : missing ';' before identifier 'eventName'
+     1>e:\amna\lab 9\task1\task1\event.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>e:\amna\lab 9\task1\task1\event.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>e:\amna\lab 9\task1\task1\event.h(9): error C2146: syntax error : missing ';' before identifier 'eventTime'
+     1>e:\amna\lab 9\task1\task1\event.h(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>e:\amna\lab 9\task1\task1\event.h(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>e:\amna\lab 9\task1\task1\event.h(10): error C2146: syntax error : missing ';' before identifier 'eventDay'
+     1>e:\amna\lab 9\task1\task1\event.h(10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>e:\amna\lab 9\task1\task1\event.h(10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+         Generating Code...
+     1>Done Building Project "E:\Amna\lab 9\task1\task1\task1.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.19

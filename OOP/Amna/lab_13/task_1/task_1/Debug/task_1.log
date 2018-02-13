@@ -1,0 +1,21 @@
+﻿Build started 6/19/2014 9:33:04 PM.
+     1>Project "E:\Amna\lab_13\task_1\task_1\task_1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt book.cpp driver.cpp magazine.cpp media.cpp shelf.cpp
+         shelf.cpp
+         media.cpp
+     1>e:\amna\lab_13\task_1\task_1\media.cpp(14): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+         magazine.cpp
+     1>e:\amna\lab_13\task_1\task_1\magazine.cpp(15): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+         driver.cpp
+         book.cpp
+     1>e:\amna\lab_13\task_1\task_1\book.cpp(15): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+         Generating Code...
+     1>Done Building Project "E:\Amna\lab_13\task_1\task_1\task_1.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.73

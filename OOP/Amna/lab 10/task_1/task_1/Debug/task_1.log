@@ -1,0 +1,17 @@
+﻿Build started 5/27/2014 7:51:46 PM.
+     1>Project "E:\Amna\lab 10\task_1\task_1\task_1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt string.cpp
+         string.cpp
+     1>e:\amna\lab 10\task_1\task_1\string.cpp(116): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
+                 e:\amna\lab 10\task_1\task_1\string.cpp(77) : definition of 'i' ignored
+                 e:\amna\lab 10\task_1\task_1\string.cpp(87) : definition of 'i' used
+     1>e:\amna\lab 10\task_1\task_1\string.cpp(117): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
+                 e:\amna\lab 10\task_1\task_1\string.cpp(77) : definition of 'i' ignored
+                 e:\amna\lab 10\task_1\task_1\string.cpp(87) : definition of 'i' used
+     1>e:\amna\lab 10\task_1\task_1\string.cpp(116): error C4700: uninitialized local variable 'i' used
+     1>Done Building Project "E:\Amna\lab 10\task_1\task_1\task_1.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.81

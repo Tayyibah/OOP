@@ -1,0 +1,175 @@
+#ifndef "MYSTRING_H"
+#define "MYSTRING_H"
+#include <iostream>
+#include <cstring>
+#include <cmath>
+using namespace std;
+
+MyString :: MyString()
+{
+	strLength=0;
+	str=NULL;
+}
+MyString :: MyString(const char *s)
+{
+	if (s!=NULL)
+	{
+		int len = strlen(s);
+		str = new char [len+1];
+		strcpy(str,s);
+	}
+	else
+		strcpy(str, NULL);
+
+}
+MyString :: MyString(const MyString& m)
+{
+	if (m.str !=NULL)
+	{
+		int len = strlen(m.str);
+		str = new char [len+1];
+		strcpy(str,m.str);
+	}
+	else
+	{
+		str = NULL;	
+	}
+	strLength=m.strLength;
+
+}
+int MyString :: getLength()
+{
+	return strLength;
+
+}
+
+const MyString :: operator = (MyString &s)
+{
+	delete [] str;
+	int len = strlen(s.str);
+	str = new char [len+1];
+	strcpy (str,s.str);
+	strLength=s.strLength;
+	return *this;
+
+}
+ bool MyString :: operator == (const MyString&s) const
+ {
+	 if (strcmp (str,s.str)==0)
+	 {
+		 return true;
+
+	 }
+	 else
+	 {
+		 return true;
+	 
+	 }
+ 
+ }
+ bool MyString :: operator <= (const MyString&s)const
+ {
+	 if (stcmp(str,s.str)>0 || strcmp(str,s.str)==0)
+	 {
+		 return true;
+	 
+	 
+	 }
+	 else 
+		 return false;
+ 
+}
+ bool MyString ::operator < (const MyString &s) const
+ {
+	 if (strcmp (str,s.str)>0)
+	 {
+		 return true;
+	 
+	 }
+	 else
+	 {
+		 return false;
+	 
+	 }
+ 
+ }
+ bool MyString :: operator >= (const MyString&s) const
+ {
+	  if (stcmp(str,s.str)<0 || strcmp(str,s.str)==0)
+	 {
+		 return true;
+	 
+	 
+	 }
+	 else 
+		 return false;
+
+ 
+ }
+ bool MyString :: operator > (const MyString&) const;
+ { if (strcmp (str,s.str)<0)
+	 {
+		 return true;
+	 
+	 }
+	 else
+	 {
+		 return false;
+	 
+	 }
+  }
+ bool MyString :: operator != (const MyString&) const
+ {
+	 if (strcmp (str, s.str)!=0)
+	 {
+		 return true;
+	 
+	 }
+	 else
+	 {
+		 return false;
+	 
+	 }
+ 
+}
+ MyString :: MyString operator + (const MyString&a) const
+ {
+	 MyString m;
+	 int len = strlen(str);
+	 str = new char [len +1];
+	 int l = strlen(a.str);
+	 a.str= new char [l+1];
+	 int j;
+	 j=len+l+3;
+	 //int i= strlen(m.str);
+	 m.str= new char [j];
+	 strcp(m.str,(strcat(str,a.str)));
+	 return m;
+}
+ const MyString :: MyString& operator += (const MyString&)
+ {
+
+ 
+ 
+ }
+ int MyString :: getLength()
+ {
+	 return strLength;
+ 
+ }
+ void MyString :: display()
+ {
+	 cout << "The string is "<<str<<endl;
+	 cout<< "The string length is "<<strLength<<endl;
+ 
+ }
+ MyString :: ~MyString()
+ {
+	 delete[]str;
+ 
+ }
+
+
+
+
+

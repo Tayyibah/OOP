@@ -1,0 +1,88 @@
+Q1:
+
+Part A: 
+
+Line 1
+
+
+Part B: 
+
+Line 8
+
+
+Part C: 
+
+Line 4
+
+
+Part D: 
+
+Line 9
+
+
+Part E: 
+
+option A
+---------------------------------------------------------------------------------------------------------------------
+
+Q2:
+
+Part A:
+
+Association
+
+
+Part B:
+
+It allows us to tell the compiler that a class B exists and it's defined somewhere in the program 
+(after class A defintion) so that the compiler doesn't generate error when it encounters the class name B in class A.
+This technique is called Forward declaration. 
+
+
+Part C:
+
+A::A()
+B::B()
+B::B(constB&)
+A::A(const A&)
+display(A,B)
+A::~A()
+B::~B()
+B::~B()
+A::~A()
+
+
+Part D:
+
+Error in line 2 // = operator ambiguity error in class A
+
+
+Part E:
+
+A::A()
+B::B()
+A::operator =(const B&)
+B::~B()
+A::~A()
+
+
+Part F:
+
+A::A()
+B::B()
+A::A(const B&)
+A::operator =(const A&)
+A::~A()
+B::~B()
+A::~A()
+
+
+Part G:
+
+Same output as Part F
+
+
+Part H:
+
+same output as Part F
+------------------------------------------------------------------------------------------------------------------------

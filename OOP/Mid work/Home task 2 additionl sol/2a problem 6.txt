@@ -1,0 +1,14 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main()																			/*if the input is:
+																					23 Lance Grant
+																					 23
+																					Lance Grant*/
+{
+	string age, name;
+	cin >> age;
+getline(cin, name);
+cout<<age<<" "<<name;
+	return 0;
+}

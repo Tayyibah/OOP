@@ -1,0 +1,28 @@
+﻿Build started 1/27/2018 7:03:19 PM.
+     1>Project "D:\Visual Studio\Asg3+4\Bsef14a011\Bsef14a011.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt FileHandling.cpp
+         FileHandling.cpp
+     1>d:\visual studio\asg3+4\bsef14a011\filehandling.cpp(57): warning C4244: 'initializing' : conversion from 'std::streamoff' to 'int', possible loss of data
+     1>d:\visual studio\asg3+4\bsef14a011\filehandling.cpp(59): warning C4244: '=' : conversion from 'std::streamoff' to 'int', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Visual Studio\Asg3+4\Debug\Bsef14a011.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Visual Studio\Asg3+4\Debug\Bsef14a011.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Visual Studio\Asg3+4\Debug\Bsef14a011.lib" /MACHINE:X86 Debug\Asg4.obj
+         Debug\binaryFile.obj
+         Debug\ClassTemplate.obj
+         Debug\FileHandling.obj
+         Debug\Homework.obj
+         Debug\Inheritance_1.obj
+         Debug\Inheritance_2.obj
+         Debug\inheritance_3_2ndJan.obj
+         Debug\Matrix.obj
+         Debug\operator_overloading.obj
+         Debug\Polymorphism.obj
+         Debug\Set.obj
+         Debug\Ass3.obj
+         Debug\Time.obj
+         Bsef14a011.vcxproj -> D:\Visual Studio\Asg3+4\Debug\Bsef14a011.exe
+     1>Done Building Project "D:\Visual Studio\Asg3+4\Bsef14a011\Bsef14a011.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.71

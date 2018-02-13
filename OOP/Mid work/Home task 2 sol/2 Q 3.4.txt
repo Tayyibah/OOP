@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+struct Rational 
+{	
+	int res;
+	int numenator;
+	int denomenator;
+};
+
+Rational getNumsData();
+
+Rational difRational( Rational , Rational );
+
+	Rational n;
+	Rational res;
+int main()
+{
+	Rational difference;
+	difference=getNumsData();
+	cout<<"The difference between numerator and denominator is:"<<difference.res<<endl;
+	return 0;
+}
+
+
+
+Rational getNumsData()
+{
+	Rational difference;
+	cout<<"Enter num one:";
+	cin>>difference.numenator;
+	cout<<"Enter num two:";
+	cin>>difference.denomenator;
+	difference.res=difference.numenator-difference.denomenator;
+	return difference;
+}

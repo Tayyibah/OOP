@@ -1,0 +1,87 @@
+#include<iostream>
+using namespace std;
+struct Time
+{
+	int hour;
+	int minute;
+	int second;
+};
+
+void inputTime( Time & t ); // set hour, minute, second
+void printTwentyFourHourFormat(Time ); // print universal time
+void printTwelveHourFormat(Time ); // print standard time
+void incSec( Time &, int = 1 );// increment in the second of the received time variable
+// default increment is 1
+void incMin( Time &, int = 1 ); // increment in the minute of the received time variable
+// default increment is 1
+void incHour( Time &, int = 1 ); // increment in the hour of the received time variable
+// default increment is 1
+bool isTimeSame( Time &, Time & ); // returns true if two received times are same
+int main()
+{
+	Time t;
+	inputTime(t);
+	printTwentyFourHourFormat(t); 
+	printTwelveHourFormat(t);
+	incSec(t,sec= 1 );
+	incMin( t, min= 1 );
+	incHour( t, hr = 1 );
+	isTimeSame( t, t);
+	return 0;
+}
+
+void inputTime( Time *t )
+{
+	cout<<"Enter the time int hour:";
+	cin>>t.hour;
+	cout<<"Enter the time int minute:";
+	cin>>t.minute;
+	cout<<"Enter the time int second:";
+	cin>>t.second;
+}
+void printTwentyFourHourFormat(Time )
+{
+	for(int t.hr=0;t.hr<12;t.hr++)
+	{
+		for(int t.min=0;t.min<60;t.min++)
+		{
+			for(int t.sec=0;t.sec<60;t.sec++)
+				cout<<t.hr<<":"<<t.min<<":"<<t.sec<<endl;
+		}
+	}
+
+}
+void printTwelveHourFormat(Time )
+{
+	for(int t.hr=0;t.hr<24;t.hr++)
+	{
+		for(int t.min=0;t.min<60;t.min++)
+		{
+			for(int t.sec=0;t.sec<60;t.sec++)
+				cout<<t.hr<<":"<<t.min<<":"<<t.sec<<endl;
+		}
+	}
+
+}
+void incSec( Time &, int sec= 1 )
+{
+	incMin( t, (t.seconds+sec)/60 );
+	t.seconds=(t.seconds+sec)%60 );
+}
+void incMin( Time & t, int min= 1 )
+{
+	incHour( t, (t.minutes+min)/60 );
+	t.minutes=(t.minutes+min)%60 );
+}
+void incHour( Time & t, int hr= 1 )
+{
+	t.hours=(t.hours+hr)%24;
+}
+bool isTimeSame( Time & , Time & )
+{
+	found=false;
+	if(t.seconds==t.sec&&t.minutes==t.min&&t.hours==t.hr)
+		cout<<"Time is same "<<endl;
+	found=true;
+	return true;
+}

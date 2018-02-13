@@ -1,0 +1,16 @@
+﻿Build started 6/4/2014 11:51:05 PM.
+     1>Project "E:\Amna\lab 11\LAB_11_TASK_2\LAB_11_TASK_2\LAB_11_TASK_2.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt miltime.cpp
+         miltime.cpp
+     1>e:\amna\lab 11\lab_11_task_2\lab_11_task_2\miltime.cpp(41): warning C4101: 's' : unreferenced local variable
+       Link:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Amna\lab 11\LAB_11_TASK_2\Debug\LAB_11_TASK_2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Amna\lab 11\LAB_11_TASK_2\Debug\LAB_11_TASK_2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Amna\lab 11\LAB_11_TASK_2\Debug\LAB_11_TASK_2.lib" /MACHINE:X86 Debug\driver.obj
+         Debug\miltime.obj
+         Debug\time.obj
+         LAB_11_TASK_2.vcxproj -> E:\Amna\lab 11\LAB_11_TASK_2\Debug\LAB_11_TASK_2.exe
+     1>Done Building Project "E:\Amna\lab 11\LAB_11_TASK_2\LAB_11_TASK_2\LAB_11_TASK_2.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.92

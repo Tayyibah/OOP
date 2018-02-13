@@ -1,0 +1,112 @@
+Ans_9.1:
+	cout << &count;
+
+Ans_9.2:
+	float *fltPtr;
+
+Ans_9.3:
+Three uses of * symbol in C++:
+1)Declaration of a pointer
+	int* ap;  //  a pointer to an int.
+	void foo(int* p); // Declares function foo. // foo expects a pointer to an int as an argument.
+2}Dereference a pointer in an expression.
+	int i = 0;
+	int* ap = &i;   // ap points to i
+	*ap = 10;       // Indirectly sets the value of i to 10
+3)A multiplication operator.
+	int i = 10*20;
+Ans_9.4:
+	50 60 70 
+	500 300 140
+Ans_9.5:
+	for (int x = 0; x < 100; x++) 
+		cout << *(array + x) << endl;
+
+Ans_9.6:
+	12040
+
+Ans_9.7:
+	A) Valid 
+	B) Valid 
+	C) Invalid. Only addition and subtraction are valid arithmetic operations with pointers. 
+	D) Invalid. Only addition and subtraction are valid arithmetic operations with pointers.
+ 	E) Valid
+
+Ans_9.8:
+	A) Valid 
+	B) Valid 
+	C) Invalid. reason:fvar is a float and iptr is a pointer to an int. 
+	D) Valid 
+	E) Invalid. reason:ivar must be declared before iptr.
+
+Ans_9.9:
+	A) True 
+	B) False 
+	C) True 
+	D) False
+
+Ans_9.10:
+	makeNegative (&numBER);
+Ans_9.11:
+	void convert(double *val)
+	{ val = *val * 2.54; }
+
+Ans_9.12:
+	A
+Ans_9.13:
+	ip = new int; delete ip;
+
+Ans_9.14:
+	ip = new int[500]; delete[] ip;
+
+Ans_9.15:
+	When referring to computer memory, a null pointer is a command used to direct a software program or operating system to an empty location in the computer memory. Commonly, the null pointer is used to denote the end of a memory search or processing event. In computer programming, a null pointer is a pointer that does not point to any object or function.
+
+
+Ans_9.16:
+	int *getIntegers() 
+	{ 	
+		int *num= new int[2]; 	
+		cout << "Enter your three numbers:"; 
+		cin >> num[0] >> num[1]; 
+		return num;
+	}
+
+
+Ans_9.17:
+	int *getInitials() 
+	{ 
+		int initials=new int;
+ 		cout << "Enter your three initials: ";
+ 		cin >> initials[0] >> initials[1] >> initials[2]; 
+		return initials; 
+	}
+
+Ans_11.1:
+void DISPLAYRectangle (Rectangle r) 
+{ 
+	cout << r.length << endl; 
+	cout << r.width << endl; 
+}
+
+Ans_11.2:
+void getRectangle (Rectangle &r) 
+{ 	
+	cin >> r.width; 
+	cin >> r.length; 
+}
+
+Ans_11.3:
+Rectangle getRectangle ()
+ { 
+	Rectangle r;
+	cin >> r.width; 
+	cin >> r.length; 
+	return r;
+ }
+
+Ans_11.4:
+	Rectangle *ptr;
+
+Ans_11.5:
+	B

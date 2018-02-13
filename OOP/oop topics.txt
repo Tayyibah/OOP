@@ -1,0 +1,53 @@
+templates use in cpp n .h:
+	http://www.yolinux.com/TUTORIALS/Cpp-Templates.html
+	http://www.codeproject.com/Articles/48575/How-to-define-a-template-class-in-a-h-file-and-imp
+
+Delegate constructors: 
+	a)https://thenewcpp.wordpress.com/2013/07/25/delegating-constructors/
+	b)https://www.ibm.com/developerworks/community/blogs/5894415f-be62-4bc0-81c5-3956e82276f3/entry/introduction_to_the_c_11_feature_delegating_constructors?lang=en
+
+Structure:
+	how to access structures: http://www.tutorialspoint.com/cplusplus/cpp_data_structures.htm
+
+operator overloading nice : 
+	http://en.wikipedia.org/wiki/Assignment_operator_(C%2B%2B)
+
+inheritance:
+	http://www.studytonight.com/cpp/types-of-inheritance.php
+
+Assignment operator inheritance:
+	http://stackoverflow.com/questions/9161512/assignment-operator-inheritance
+
+constructors of inheritance:
+	http://www.codeproject.com/Articles/7011/An-Intro-to-Constructors-in-C
+	https://stackoverflow.com/questions/29057670/dynamically-allocating-array-passing-in-functions
+
+deep n other copies:
+	http://stackoverflow.com/questions/6182565/java-deep-copy-shallow-copy-clone
+
+Object copying:
+	http://en.wikipedia.org/wiki/Object_copy
+
+c++ information site:
+	http://www.cplusplus.com/doc/tutorial/program_structure/
+
+debug:
+	http://www.cprogramming.com/tutorial/visual_studio_breakpoints.html
+
+info
+	http://www.tutorialspoint.com/cplusplus/cpp_copy_constructor.htm
+
+info stack
+	http://www.cprogramming.com/tutorial/bitwise_operators.html
+
+error:
+	http://stackoverflow.com/questions/846103/runtime-vs-compile-time
+
+calender:
+	https://video.search.yahoo.com/yhs/search;_ylt=A0LEVvlu5m1VtmgAMxIPxQt.;_ylu=X3oDMTEzZjZpNzAxBGNvbG8DYmYxBHBvcwMxBHZ0aWQDRkZVSUMwXzEEc2VjA3Nj?p=How+To+Make+a+Calendar+On+Visual+Studio&fr=yhs-ddc-ddc_bd&hspart=ddc&hsimp=yhs-ddc_bd
+
+visualstudio. downloads: 
+	https://www.visualstudio.com/products/visual-studio-community-vs
+	http://www.visualstudio.com/downloads/download-visual-studio-vs
+cplusplus:
+	http://www.cplusplus.com/reference/iolibrary/

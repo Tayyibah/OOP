@@ -1,0 +1,5 @@
+int main()
+{
+    MyClass * pointer = new MyClass();  
+// at runtime, an object is created, and the default constructor is called
+}

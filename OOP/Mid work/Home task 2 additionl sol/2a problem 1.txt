@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int x,y;
+	char ch;
+
+	cout<<"Enter the  1 nums and chars:";
+	cin >> x >> y >> ch;
+	cout<<x<<" "<<y<<" "<<ch<<endl;
+	cout<<endl;
+
+	cout<<"Enter the  2 nums and chars :";
+	cin >> ch >> x >> y;
+	cout<<x<<" "<<y<<" "<<ch<<endl;
+	cout<<endl;
+
+	cout<<"Enter the  3 nums and chars :";
+	cin >> ch >> x >> y;
+	cout<<x<<" "<<y<<" "<<ch<<endl;
+	cout<<endl;
+	
+	cout<<"Enter the 4 nums and chars :";
+	cin >> x >> ch >> y;
+	cout<<x<<" "<<y<<" "<<ch<<endl;
+	cout<<endl;
+
+	cout<<"Enter the 5 nums and chars:";
+	cin >> x >> y;
+	cin.get(ch);
+	cout<<x<<" "<<y<<" "<<ch<<endl;
+	return 0;
+}

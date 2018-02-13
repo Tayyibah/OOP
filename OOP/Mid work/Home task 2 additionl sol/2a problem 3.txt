@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int x,y;                  /*13  28  D         14  E  98         A  B  56*/	
+	char ch;
+
+	cin >> x >> y;
+	cin.ignore(50, '\n');
+	cin >> ch;
+	cout<<x<<" "<<y<<" "<<ch<<endl<<endl;
+	
+	cin >> x;
+	cin.ignore(50, '\n');
+	cin >> y;
+	cin.ignore(50, '\n');
+	cin.get(ch); 
+	cout<<x<<" "<<y<<" "<<ch<<endl<<endl;
+	
+	
+	cin >> y;
+	cin.ignore(50, '\n');
+	cin >> x >> ch;
+	cout<<x<<" "<<y<<" "<<ch<<endl<<endl;
+
+
+	cin.get(ch);
+	cin.ignore(50, '\n');
+	cin >> x;
+	cin.ignore(50, 'E');
+	cin >> y;
+	cout<<x<<" "<<y<<" "<<ch<<endl<<endl;
+	return 0;
+}

@@ -1,0 +1,19 @@
+#include<iostream>
+#include<fstream>
+using namespace std;
+
+int main()
+{
+	ifstream ifs("in1.txt");
+	int count;
+	ifs>>count;
+	
+	for (int i = 0; i < count; i++)
+	{
+		int initialVelocity , time;
+		ifs>>initialVelocity>>time;
+		cout<<initialVelocity * (time*2)<<endl;
+	
+	}
+	return 1;
+}

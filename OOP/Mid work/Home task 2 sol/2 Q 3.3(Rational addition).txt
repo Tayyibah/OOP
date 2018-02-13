@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+struct Rational 
+{	
+	int res;
+	int numenator;
+	int denomenator;
+};
+Rational addRational( Rational , Rational );
+Rational add;
+Rational res;
+int main()
+{
+	Rational add;
+	cout<<"Enter num one:";
+	cin>>add.numenator;
+	cout<<"Enter num two:";
+	cin>>add.denomenator;
+	add=addRational(add.numenator,add.denomenator);
+	cout<<"The sum of numerator and denominator is:"<<add.res<<endl;
+	return 0;
+}
+
+
+
+Rational addRational(Rational add.numenator , Rational add.denomenator)
+{
+	add.res=add.numenator-add.denomenator;
+	return add;
+}

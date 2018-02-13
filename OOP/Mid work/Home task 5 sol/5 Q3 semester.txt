@@ -1,0 +1,108 @@
+#include<iostream>
+using namespace std;
+	class Student
+{
+public:
+	char rollNo[11]; 
+	int semester;  
+	char name[100]; 
+	float CGPA;
+	void setRollNo(char *)
+	{
+		char rollNo[11]="bsef14a132";
+		int r;
+		r=rollNo[7]-'0';
+		r=r*10;
+		r=r+rollNo[8]-'0';
+		r=r*10;
+		r=r+rollNo[9]-'0';
+		if(r>=0&&r<=999)
+		{
+			cin.getline(rollNo,11);
+		}
+	}
+	void setSemester( int semester)
+	{
+		cin>>semester;
+	}
+
+	void setName(char *name)
+	{
+		cin.ignore();
+		cin.getline(name,11);
+	}
+
+	void setCGPA(float CGPA)
+	{
+		cin>>CGPA;
+	}
+
+	const char * getRollNo()
+	{
+		return  rollNo;
+	}
+
+	int getSemester()
+	{
+		return  semester;
+	}
+
+	const char * getName()
+	{
+		return  name;
+	}
+
+	float getCGPA()
+	{
+		return  CGPA;
+	}
+
+	bool isStudentDropOut()
+	{
+		if(semester==1&&CGPA<1.5||semester==2&&CGPA<1.7)
+			return true;
+		else 
+			return false;
+	}
+
+	bool isStudentOnProbation()
+	{
+		if(semester==1&&CGPA<1.5&&CGPA<1.7||semester==2&&CGPA>=1.7&&CGPA<2)
+			return true;
+		else 
+			return false;
+	}
+
+};
+
+	int main()
+	{
+	Student s;
+	cout<<"Enter your roll no:";
+	s.setRollNo(s.rollNo);
+	for(int i=0;i<2;i++)
+	{
+	cout<<"Enter your semester:";
+	s.setSemester(s.semester);
+	cout<<"Enter your name:";
+	s.setName(s.name);
+	cout<<"Enter your CGPA:";
+	s.setCGPA(s.CGPA);
+	cout<<s.getName()<<endl;
+	cout<<"has roll no "<<s.getRollNo()<<endl;
+	cout<<"got CGPA"<<s.getCGPA()<<endl;
+	}
+
+	if(s.isStudentDropOut())
+		cout<<"Student is not drop out"<<endl;
+	else
+		cout<<"You can go to next semester"<<endl;
+	
+	if(s.isStudentOnProbation())
+		cout<<"Student is OnProbation"<<endl;
+	else
+		cout<<"You have good scores"<<endl;
+	return 0;
+	}
+
+

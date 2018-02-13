@@ -1,0 +1,22 @@
+﻿Build started 9/1/2015 11:41:49 PM.
+     1>Project "D:\Visual Studio n other docs\Visual Studio 2012\Projects\File Handling\istream\istream\istream.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt seek.cpp
+         seek.cpp
+     1>d:\visual studio n other docs\visual studio 2012\projects\file handling\istream\istream\seek.cpp(12): warning C4244: 'initializing' : conversion from 'std::streamoff' to 'int', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Visual Studio n other docs\Visual Studio 2012\Projects\File Handling\istream\Debug\istream.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Visual Studio n other docs\Visual Studio 2012\Projects\File Handling\istream\Debug\istream.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Visual Studio n other docs\Visual Studio 2012\Projects\File Handling\istream\Debug\istream.lib" /MACHINE:X86 Debug\gcount.obj
+         Debug\get.obj
+         Debug\getline.obj
+         Debug\ignore.obj
+         Debug\peek.obj
+         Debug\read.obj
+         Debug\readsome.obj
+         Debug\seek.obj
+         Debug\unget.obj
+         istream.vcxproj -> D:\Visual Studio n other docs\Visual Studio 2012\Projects\File Handling\istream\Debug\istream.exe
+     1>Done Building Project "D:\Visual Studio n other docs\Visual Studio 2012\Projects\File Handling\istream\istream\istream.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.61

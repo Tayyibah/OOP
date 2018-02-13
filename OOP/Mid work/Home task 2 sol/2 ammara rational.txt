@@ -1,0 +1,112 @@
+#include<iostream>
+using namespace std;
+struct Rational
+{
+	int numerator;
+	int denominator;
+};
+void inputRational( Rational & );
+ void printRational( Rational & );
+ Rational addRational( Rational , Rational );
+ Rational diffRational( Rational , Rational );
+ Rational divRational( Rational , Rational );
+ Rational reduce( Rational & );
+ int main()
+ {
+	 Rational a;
+	 Rational b;
+	 Rational add, diff, div,red;
+
+	 cout<<"Enter fraction 1\n";
+	 inputRational (a);
+	 cout<<"enter fraction 2 \n:";
+	 inputRational (b);
+	 printRational (a);
+	 printRational(b);
+	 cout<<"Sum of Rational number are\n";
+	 add=addRational(a,b);
+	 printRational(add);
+	 cout<<"differnce of to rational numbers are \n";
+	 diff=diffRational (a,b);
+	 printRational(diff);
+	 cout<<"division of two rational numbwers are \n";
+	 div=divRational (a,b);
+	 printRational(div);
+	 cout<<"reduced fraction 1 is \n";
+	red= reduce(a);
+	printRational (red);
+	 cout<<"Reduced fraction 2 is \n";
+	 red=reduce (b);
+	 printRational(red);
+	 return 0;
+ }
+ void inputRational(Rational &a)
+ {
+	 cout<<"Enter Numerator";
+		 cin>>a.numerator;
+		 cout<<"Enter denominatot:";
+		 cin>>a.denominator;
+		 cout<<endl;
+ }
+ void printRational(Rational &a)
+ {
+	 cout<<"Entered Rational number is :";
+	 cout<<a.numerator;
+	 cout<<"/";
+	 cout<<a.denominator;
+	 cout<<endl;
+ }
+ Rational addRational (Rational  a, Rational b)
+ {
+	 Rational add;
+	 add.numerator=(a.numerator*b.denominator)+ (b.numerator*a.denominator);
+	 add.denominator=a.denominator*b.denominator;
+	add= reduce (add);
+	 return add;
+ }
+ Rational diffRational(Rational a, Rational b)
+ {
+	 Rational diff;
+	 diff.numerator=(a.numerator*b.denominator)-(b.numerator*a.denominator);
+	 diff.denominator=a.denominator*b.denominator;
+	diff= reduce (diff);
+	 return diff;
+ }
+ Rational divRational( Rational a, Rational b)
+ {
+	 Rational div;
+	 div.numerator=a.numerator*b.denominator;
+	 div.denominator=a.denominator*b.numerator;
+	 div=reduce (div);
+	 return div;
+ }
+ Rational reduce (Rational & a)
+ {
+	 int small;
+	 if (a.numerator<a.denominator)
+	 {
+		 small=a.numerator;
+		 
+	 }
+	 else if  (a.numerator>a.denominator)
+	 {
+		 small=a.denominator;
+
+	 }
+	 else 
+	 {
+		 a.numerator=1;
+		 a.denominator=1;
+		 return a;
+	 }
+	 for (int i=2; i<small; i++)
+	 {
+		 if (a.numerator%i==0 && a.denominator%i==0)
+		 {
+			 a.numerator=a.numerator/i;
+			 a.denominator=a.denominator/i;
+			 i=1;
+		 }
+	 }
+	 return a;
+ }

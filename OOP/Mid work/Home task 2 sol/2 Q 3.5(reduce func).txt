@@ -1,0 +1,44 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+struct reduce
+{
+	int numenator;
+	int denomenator;
+};
+
+void reduceRational(reduce &a)
+{
+	int small=0;
+	if(a.numenator<a.denomenator)
+	{
+		small=a.numenator;
+	}
+	else if(a.numenator>a.denomenator)
+		small=a.denomenator;
+	else
+	{
+	a.numenator=1;
+	a.denomenator=1;
+	}
+	for(int i=2;i<small;i++)
+	{
+		if(a.numenator%i==0&&a.denomenator%i==0)
+		{
+			a.numenator=a.numenator/i;
+			a.denomenator=a.denomenator/i;
+			i=1;
+		}
+	
+	}
+	cout<<"Reduce form of them is "<<a.numenator<<"/"<<a.denomenator<<endl;
+}
+
+int main()
+{
+	reduce a;
+	cin>>a.numenator;
+	cin>>a.denomenator;
+	reduceRational(a);
+	return 0;
+}

@@ -1,0 +1,19 @@
+﻿Build started 10/5/2015 11:49:41 PM.
+     1>Project "D:\OOP\OOP SEMESTER 2(Amna)\amna waheed\amna\tic tac toe\tic tac toe\tic tac toe.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "tic tac toe.cpp" tictactoe.cpp tttoe.cpp
+         tttoe.cpp
+         tictactoe.cpp
+         tic tac toe.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\OOP\OOP SEMESTER 2(Amna)\amna waheed\amna\tic tac toe\Debug\tic tac toe.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\OOP\OOP SEMESTER 2(Amna)\amna waheed\amna\tic tac toe\Debug\tic tac toe.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\OOP\OOP SEMESTER 2(Amna)\amna waheed\amna\tic tac toe\Debug\tic tac toe.lib" /MACHINE:X86 "Debug\tic tac toe.obj"
+         Debug\tictactoe.obj
+         Debug\tttoe.obj
+     1>MSVCRTD.lib(crtexew.obj) : error LNK2019: unresolved external symbol _WinMain@16 referenced in function ___tmainCRTStartup
+     1>D:\OOP\OOP SEMESTER 2(Amna)\amna waheed\amna\tic tac toe\Debug\tic tac toe.exe : fatal error LNK1120: 1 unresolved externals
+     1>Done Building Project "D:\OOP\OOP SEMESTER 2(Amna)\amna waheed\amna\tic tac toe\tic tac toe\tic tac toe.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:17.32

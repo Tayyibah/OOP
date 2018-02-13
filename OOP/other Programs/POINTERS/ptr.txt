@@ -1,0 +1,126 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a=3;
+	int *b=&a;
+	cout<<b<<endl;
+	cout<<*b<<endl;
+}
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int arr[]={1,2,3,4};
+	int *p=arr;
+	int **q=&p;
+	cout<<*p<<endl;
+	cout<<p<<endl;
+	cout<<**q<<endl;
+	cout<<*q<<endl;
+	cout<<q<<endl;
+}
+
+----------------=========================================================================================================
+
+#include<iostream>
+using namespace std;
+void func(int*p);
+void func(int**q);
+int main()
+{
+	int a=3;
+	int *p=&a;
+	func(&a);
+	int **q=&p;
+	func(&a);
+}
+void func(int*p)
+{
+	cout<<p<<endl;
+	cout<<*p<<endl;
+}
+void func(int**q)
+{
+	cout<<q<<endl;
+	cout<<**q<<endl;
+}
+-----------------------------------------------------------------------------------------------------------------------
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+	int size=4;
+	int arr[]={1,2,3,4};
+	int *p=arr;
+	int **q=&p;
+	for(int i=0;i<size;i++)
+	{
+	int p=arr[i];
+	cout<<*(&p)<<endl;
+	cout<<p<<endl;
+	cout<<**q<<endl;
+	cout<<*q<<endl;
+	cout<<q<<endl;
+	}
+}
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+#include<iostream>
+using namespace std;
+void func(int*a,int *b,int*c);
+int main()
+{
+	int arr[3]={2,5,7};
+	int *a=&arr[0];
+	int *b=&arr[1];
+	int *c=&arr[2];
+	func(a,b,c);
+}
+void func(int*a,int *b,int*c)
+{
+	cout<<a<<" "<<*a<<endl;
+	cout<<b<<" "<<*b<<endl;
+	cout<<c<<" "<<*c<<endl;
+}
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+#include<iostream>
+using namespace std;
+void swap(int &X,int &Y);
+int main()
+{
+	int X=8;
+	int Y=3;
+	swap(X,Y);
+}
+
+
+void swap(int &X,int &Y)
+{
+	int temp;
+	temp=X;
+	X=Y;
+	Y=temp;
+	cout<<"X IS:"<<X<<endl;
+	cout<<"Y IS:"<<Y<<endl;
+}
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------

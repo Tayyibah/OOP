@@ -1,0 +1,27 @@
+﻿Build started 5/22/2015 8:11:04 AM.
+     1>Project "C:\Users\DWEB\Documents\Visual Studio 2012\Projects\Apple Basket\Apple Basket\Apple Basket.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Apple.cpp Basket.cpp driver.cpp
+         driver.cpp
+     1>c:\users\dweb\documents\visual studio 2012\projects\apple basket\apple basket\apple.h(10): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\dweb\documents\visual studio 2012\projects\apple basket\apple basket\apple.h(10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\dweb\documents\visual studio 2012\projects\apple basket\apple basket\apple.h(13): error C2061: syntax error : identifier 'Basket'
+     1>c:\users\dweb\documents\visual studio 2012\projects\apple basket\apple basket\driver.cpp(17): error C2664: 'Apple::Apple(const Apple &)' : cannot convert parameter 1 from 'Basket' to 'const Apple &'
+                 Reason: cannot convert from 'Basket' to 'const Apple'
+                 No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+         Basket.cpp
+     1>c:\users\dweb\documents\visual studio 2012\projects\apple basket\apple basket\apple.h(10): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\dweb\documents\visual studio 2012\projects\apple basket\apple basket\apple.h(10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\dweb\documents\visual studio 2012\projects\apple basket\apple basket\apple.h(13): error C2061: syntax error : identifier 'Basket'
+     1>c:\users\dweb\documents\visual studio 2012\projects\apple basket\apple basket\basket.cpp(7): error C2664: 'Apple::Apple(const Apple &)' : cannot convert parameter 1 from 'Basket *const ' to 'const Apple &'
+                 Reason: cannot convert from 'Basket *const ' to 'const Apple'
+                 No constructor could take the source type, or constructor overload resolution was ambiguous
+         Apple.cpp
+     1>c:\users\dweb\documents\visual studio 2012\projects\apple basket\apple basket\basket.h(9): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\dweb\documents\visual studio 2012\projects\apple basket\apple basket\basket.h(9): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+         Generating Code...
+     1>Done Building Project "C:\Users\DWEB\Documents\Visual Studio 2012\Projects\Apple Basket\Apple Basket\Apple Basket.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.82

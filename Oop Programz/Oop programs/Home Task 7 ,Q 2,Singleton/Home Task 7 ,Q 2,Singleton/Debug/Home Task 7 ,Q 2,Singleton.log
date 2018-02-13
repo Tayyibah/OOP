@@ -1,0 +1,34 @@
+﻿Build started 4/17/2015 2:20:25 PM.
+     1>Project "C:\Users\DWEB\Documents\Visual Studio 2012\Projects\Home Task 7 ,Q 2,Singleton\Home Task 7 ,Q 2,Singleton\Home Task 7 ,Q 2,Singleton.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Singleton.cpp driver.cpp
+         driver.cpp
+     1>c:\users\dweb\documents\visual studio 2012\projects\home task 7 ,q 2,singleton\home task 7 ,q 2,singleton\driver.cpp(7): error C2248: 'Singleton::Singleton' : cannot access private member declared in class 'Singleton'
+                 c:\users\dweb\documents\visual studio 2012\projects\home task 7 ,q 2,singleton\home task 7 ,q 2,singleton\singleton.h(5) : see declaration of 'Singleton::Singleton'
+                 c:\users\dweb\documents\visual studio 2012\projects\home task 7 ,q 2,singleton\home task 7 ,q 2,singleton\singleton.h(3) : see declaration of 'Singleton'
+     1>c:\users\dweb\documents\visual studio 2012\projects\home task 7 ,q 2,singleton\home task 7 ,q 2,singleton\driver.cpp(7): error C2248: 'Singleton::~Singleton' : cannot access private member declared in class 'Singleton'
+                 c:\users\dweb\documents\visual studio 2012\projects\home task 7 ,q 2,singleton\home task 7 ,q 2,singleton\singleton.h(6) : see declaration of 'Singleton::~Singleton'
+                 c:\users\dweb\documents\visual studio 2012\projects\home task 7 ,q 2,singleton\home task 7 ,q 2,singleton\singleton.h(3) : see declaration of 'Singleton'
+     1>c:\users\dweb\documents\visual studio 2012\projects\home task 7 ,q 2,singleton\home task 7 ,q 2,singleton\driver.cpp(8): error C2274: 'function-style cast' : illegal as right side of '.' operator
+     1>c:\users\dweb\documents\visual studio 2012\projects\home task 7 ,q 2,singleton\home task 7 ,q 2,singleton\driver.cpp(8): error C3861: 'CreateObject': identifier not found
+         Singleton.cpp
+     1>c:\users\dweb\documents\visual studio 2012\projects\home task 7 ,q 2,singleton\home task 7 ,q 2,singleton\singleton.cpp(3): error C2143: syntax error : missing ';' before '*'
+     1>c:\users\dweb\documents\visual studio 2012\projects\home task 7 ,q 2,singleton\home task 7 ,q 2,singleton\singleton.cpp(3): error C2761: '{ctor}' : member function redeclaration not allowed
+     1>c:\users\dweb\documents\visual studio 2012\projects\home task 7 ,q 2,singleton\home task 7 ,q 2,singleton\singleton.cpp(4): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\dweb\documents\visual studio 2012\projects\home task 7 ,q 2,singleton\home task 7 ,q 2,singleton\singleton.cpp(5): error C2065: 'ptr' : undeclared identifier
+     1>c:\users\dweb\documents\visual studio 2012\projects\home task 7 ,q 2,singleton\home task 7 ,q 2,singleton\singleton.cpp(7): error C2065: 'ptr' : undeclared identifier
+     1>c:\users\dweb\documents\visual studio 2012\projects\home task 7 ,q 2,singleton\home task 7 ,q 2,singleton\singleton.cpp(7): error C2248: 'Singleton::Singleton' : cannot access private member declared in class 'Singleton'
+                 c:\users\dweb\documents\visual studio 2012\projects\home task 7 ,q 2,singleton\home task 7 ,q 2,singleton\singleton.h(5) : see declaration of 'Singleton::Singleton'
+                 c:\users\dweb\documents\visual studio 2012\projects\home task 7 ,q 2,singleton\home task 7 ,q 2,singleton\singleton.h(3) : see declaration of 'Singleton'
+     1>c:\users\dweb\documents\visual studio 2012\projects\home task 7 ,q 2,singleton\home task 7 ,q 2,singleton\singleton.cpp(9): error C2065: 'ptr' : undeclared identifier
+     1>c:\users\dweb\documents\visual studio 2012\projects\home task 7 ,q 2,singleton\home task 7 ,q 2,singleton\singleton.cpp(12): error C2724: 'Singleton::freeObject' : 'static' should not be used on member functions defined at file scope
+     1>c:\users\dweb\documents\visual studio 2012\projects\home task 7 ,q 2,singleton\home task 7 ,q 2,singleton\singleton.cpp(19): error C2059: syntax error : '}'
+     1>c:\users\dweb\documents\visual studio 2012\projects\home task 7 ,q 2,singleton\home task 7 ,q 2,singleton\singleton.cpp(19): error C2143: syntax error : missing ';' before '}'
+     1>c:\users\dweb\documents\visual studio 2012\projects\home task 7 ,q 2,singleton\home task 7 ,q 2,singleton\singleton.cpp(20): error C2374: 'ptr' : redefinition; multiple initialization
+                 c:\users\dweb\documents\visual studio 2012\projects\home task 7 ,q 2,singleton\home task 7 ,q 2,singleton\singleton.h(7) : see declaration of 'ptr'
+         Generating Code...
+     1>Done Building Project "C:\Users\DWEB\Documents\Visual Studio 2012\Projects\Home Task 7 ,Q 2,Singleton\Home Task 7 ,Q 2,Singleton\Home Task 7 ,Q 2,Singleton.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.34

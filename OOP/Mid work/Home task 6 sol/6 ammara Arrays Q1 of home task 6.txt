@@ -1,0 +1,125 @@
+#include<iostream>
+using namespace std;
+class Array
+{
+private:
+	int *data;
+	int capacity;
+	int size;
+	bool isValidIndex(int index)
+	{
+		if (index>0 && index<size)
+		{
+			return true;
+		}
+		else 
+		{
+			return false;
+		}
+	}
+	void copy (int * dest, int * source)
+	{
+		int i=0;
+		while (i<size)
+		{
+			dest [i]= source[i];
+		}
+	}
+
+public:
+	Array (int cap=5)
+	{
+		if (cap>0)
+		{
+		capacity=cap;
+		data= new int [capacity];
+		}
+		else 
+		{
+			capacity=0;
+		}
+
+	}
+	
+	~ Array ()
+	{
+		if (data)
+		{
+			delete [] data;
+			data=0;
+			size=0;
+		}
+	}
+	int & getSet (int index)
+	{
+		if (isValidIndex(index))
+			return data[index];
+
+		exit(0) ;
+		
+	}
+	int getCapacity()
+	{
+		return size;
+	}
+	void resize (int newCapacity)
+	{
+		int * temp=new int [newCapacity];
+		int i=0;
+		while (i<newCapacity && i<size)
+		{
+			temp[i]=data[i];
+			i++;
+		}
+		delete [] data;
+		data=temp;
+		size=newCapacity;
+	}
+	Array (Array &ref)
+	{
+		if (ref.data==0)
+		{
+			return;
+		}
+		data=new int[ref.capacity];
+		copy(data, ref.data);
+		data = ref.data;
+		capacity=ref.capacity;
+		size=ref.size;
+	}
+};
+int main()
+{
+	
+	Array a (5);
+	
+	for (int i=0; i<5; i++)
+	{
+		cout<<"Enter a number at index #"<<i<<" :";
+		cin>>a.getSet(i);
+	}
+	int newCapacity =6;
+	a.resize(6);
+	for (int i=0; i<newCapacity; i++)
+	{
+	if (newCapacity<a.getCapacity())
+	{
+		for (int i=0; i<newCapacity ; i++)
+		{
+			cout<<a.getSet(i);
+		}
+	}
+	else 
+	{
+		for (int i=a.getCapacity(); i<newCapacity; i++)
+		{
+			cout<<"Enter a number :";
+			cin>>a.getSet(i);
+		}
+		for (int i=0; i<newCapacity ; i++)
+		{
+			cout<<a.getSet(i);
+		}
+	}
+	}
+	return 0;

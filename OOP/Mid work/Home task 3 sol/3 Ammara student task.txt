@@ -1,0 +1,81 @@
+#include<iostream>
+using namespace std;
+class Student
+{
+private:
+	char name[100];
+	char rollNo[11];
+	int semester;
+	float cgpa;
+public :
+	void setRollNo(char * r)
+	{
+		strcpy(rollNo,r);
+	}
+	void setSemester( int s)
+	{
+		semester=s;
+	}
+	void setName(char * n)
+	{
+		strcpy(name,n);
+	}
+	void setGPA(float g)
+	{
+		cgpa=g;
+	}
+	const char * getRollNo()
+	{
+		return rollNo;
+	}
+	int getSemester()
+	{
+		return semester;
+	}
+	const char * getName()
+	{
+		return name;
+	}
+	float getCGPA()
+	{
+		return cgpa;
+	}
+	bool isStudentDropOut()
+	{
+		if( (getSemester()==1 && getCGPA()<1.5)  || (getSemester  ()!=1 && getCGPA()<1.7))
+		{
+			return true;
+		}
+		else 
+		{
+			return false;
+		}
+	}
+	bool isStudentOnProbation()
+	{
+		if ( (getSemester()==1 && getCGPA()<=1.5)  || (getSemester  ()!=1 && getCGPA()<=1.7))
+		{
+
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+
+};
+int main()
+{
+	Student st;
+	st.setName ("Ammara");
+	st.setRollNo("BSSEF14A006");
+	st.setGPA(2.9);
+	cout<<"Entered name is :"<<st.getName()<<endl;
+	cout<<"Entered Roll number is :"<<st.getRollNo()<<endl;
+	cout<<"Entered gpa is:"<<st.getCGPA()<<endl;
+	cout<<"Is student drop out :"<<st.isStudentDropOut()<<endl;
+	cout<<"IS student is in prhobitation:"<<st.isStudentOnProbation()<<endl;
+	return 0;
+}

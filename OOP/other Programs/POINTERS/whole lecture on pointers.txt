@@ -1,0 +1,86 @@
+#include<iostream>
+using namespace std;
+/*
+int main()
+{
+	int a=10;
+	const int* p=&a;
+	const int**x;
+	x=&p;
+	cout<<a<<endl;//10
+	cout<<*x<<endl;//address 0020F9B8
+	cout<<&a<<endl;//address 0020F9B8
+	cout<<p<<endl;//address 0020F9B8
+	cout<<*p<<endl;//10
+	cout<<&p<<endl;//address AC
+	cout<<x<<endl;//address AC
+	cout<<*x<<endl;//address 0020F9B8
+	cout<<**x<<endl;//10
+	cout<<&x<<endl;//address A0 
+	return 0;
+}
+
+void func(int *p)
+{
+	cout<<&p<<endl;//address 80
+	cout<<*p<<endl;//21
+	int *q=new int ;
+	cout<<q<<endl;//address E8
+	cout<<*q<<endl;//address 451
+	cout<<&q<<endl;//address 9c
+	q=p;
+	cout<<q<<endl;//address 80
+	cout<<*q<<endl;//address 21
+	cout<<&q<<endl;//address 9c same
+	delete q;
+
+}
+int main()
+{
+	int x=21;
+	func(&x);
+	return 0;
+}
+int main()
+{
+	int a=90;
+	*(&a)=23;
+	int *x=&a;
+	int **y=&x;
+	cout<<&a<<endl;
+	cout<<a<<endl<<endl;
+	cout<<x<<endl;
+	cout<<*x<<endl;
+	cout<<&x<<endl<<endl;
+	cout<<y<<endl;
+	cout<<*y<<endl;
+	cout<<&y<<endl;
+	cout<<**y<<endl<<endl;
+	return 0;
+}
+int main()
+{
+	int a=10;
+	int *b;
+	b=&a;
+	int **c;
+	c=&b;
+	cout<<a<<" "<<b<<" "<<c<<endl;
+	cout<<&a<<" "<<&b<<" "<<&c<<endl;
+	cout<<a<<" "<<*b<<" "<<*c<<endl;
+	cout<<a<<" "<<*b<<" "<<**c<<endl;
+	return 0;
+}
+#include<iostream>
+using namespace std;
+int main()
+{
+	int x=10;
+	int *p=&x;
+	int &r=x;
+	cout<<x<<" "<<p<<" "<<&p<<" "<<*p<<" "<<&r<<" "<<r;
+	x=23;
+	cout<<x<<" "<<p<<" "<<&p<<" "<<*p<<" "<<&r<<" "<<r;
+	return 0;
+}
+*/

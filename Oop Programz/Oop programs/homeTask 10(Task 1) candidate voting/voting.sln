@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "voting", "voting\voting.vcxproj", "{A09163C9-56BE-4F52-9A79-C89E2D661511}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A09163C9-56BE-4F52-9A79-C89E2D661511}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A09163C9-56BE-4F52-9A79-C89E2D661511}.Debug|Win32.Build.0 = Debug|Win32
+		{A09163C9-56BE-4F52-9A79-C89E2D661511}.Release|Win32.ActiveCfg = Release|Win32
+		{A09163C9-56BE-4F52-9A79-C89E2D661511}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

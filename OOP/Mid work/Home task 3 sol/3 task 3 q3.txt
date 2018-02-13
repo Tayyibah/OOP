@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+struct A
+{
+int a;
+int b;
+};
+
+struct B
+{
+int a;
+int b;
+A comp;
+};
+
+int main()
+{
+ B obj;
+ A obja;
+ obj.a=10;
+ obj.b=76;
+ obja.a=5;
+ obja.b=9;
+ obj.comp.a=23;
+ obj.comp.b=12;
+
+ cout<<obj.a<<endl;
+ cout<<obj.b<<endl;
+
+ cout<<obj.comp.a<<endl;
+ cout<<obj.comp.b<<endl;
+
+ cout<<obja.a<<endl;
+ cout<<obja.b<<endl;
+
+	return 0;
+}

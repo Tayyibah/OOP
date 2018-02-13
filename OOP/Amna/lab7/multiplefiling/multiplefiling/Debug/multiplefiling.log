@@ -1,0 +1,20 @@
+﻿Build started 4/25/2014 8:17:33 PM.
+     1>Project "E:\Amna\lab7\multiplefiling\multiplefiling\multiplefiling.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp student.cpp
+         student.cpp
+     1>e:\amna\lab7\multiplefiling\multiplefiling\student.h(25): error C2061: syntax error : identifier 'ofstream'
+     1>e:\amna\lab7\multiplefiling\multiplefiling\student.h(26): error C2061: syntax error : identifier 'ifstream'
+     1>e:\amna\lab7\multiplefiling\multiplefiling\student.cpp(113): error C2511: 'void Student::storeInfile(std::ofstream &)' : overloaded member function not found in 'Student'
+                 e:\amna\lab7\multiplefiling\multiplefiling\student.h(7) : see declaration of 'Student'
+     1>e:\amna\lab7\multiplefiling\multiplefiling\student.cpp(124): error C2511: 'void Student::readFromFile(std::ifstream &)' : overloaded member function not found in 'Student'
+                 e:\amna\lab7\multiplefiling\multiplefiling\student.h(7) : see declaration of 'Student'
+         main.cpp
+     1>e:\amna\lab7\multiplefiling\multiplefiling\student.h(25): error C2061: syntax error : identifier 'ofstream'
+     1>e:\amna\lab7\multiplefiling\multiplefiling\student.h(26): error C2061: syntax error : identifier 'ifstream'
+         Generating Code...
+     1>Done Building Project "E:\Amna\lab7\multiplefiling\multiplefiling\multiplefiling.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.30

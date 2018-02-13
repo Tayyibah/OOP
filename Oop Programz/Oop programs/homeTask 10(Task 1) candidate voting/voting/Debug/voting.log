@@ -1,0 +1,25 @@
+﻿Build started 8/30/2015 11:43:02 PM.
+     1>Project "D:\Visual Studio n other docs\Visual Studio 2012\Projects\programs\homeTask 10(Task 1) candidate voting\voting\voting.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Candidate.h VotingMachine.cpp
+         VotingMachine.cpp
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         Candidate.h
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Visual Studio n other docs\Visual Studio 2012\Projects\programs\homeTask 10(Task 1) candidate voting\Debug\voting.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Visual Studio n other docs\Visual Studio 2012\Projects\programs\homeTask 10(Task 1) candidate voting\Debug\voting.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Visual Studio n other docs\Visual Studio 2012\Projects\programs\homeTask 10(Task 1) candidate voting\Debug\voting.lib" /MACHINE:X86 Debug\Candidate.obj
+         Debug\Candidate.obj
+         Debug\CString.obj
+         Debug\driver.obj
+         Debug\VotingMachine.obj
+     1>Debug\Candidate.obj : warning LNK4042: object specified more than once; extras ignored
+     1>VotingMachine.obj : error LNK2019: unresolved external symbol "public: __thiscall Candidate::Candidate(void)" (??0Candidate@@QAE@XZ) referenced in function "public: __thiscall VotingMachine::VotingMachine(class Candidate *,int)" (??0VotingMachine@@QAE@PAVCandidate@@H@Z)
+     1>VotingMachine.obj : error LNK2019: unresolved external symbol "public: class CString __thiscall Candidate::getElecSymbol(void)const " (?getElecSymbol@Candidate@@QBE?AVCString@@XZ) referenced in function "public: int __thiscall VotingMachine::candidateReport(class CString &)" (?candidateReport@VotingMachine@@QAEHAAVCString@@@Z)
+     1>VotingMachine.obj : error LNK2019: unresolved external symbol "public: int __thiscall Candidate::getVotes(void)const " (?getVotes@Candidate@@QBEHXZ) referenced in function "public: int __thiscall VotingMachine::candidateReport(class CString &)" (?candidateReport@VotingMachine@@QAEHAAVCString@@@Z)
+     1>VotingMachine.obj : error LNK2019: unresolved external symbol "public: void __thiscall Candidate::castVote(void)" (?castVote@Candidate@@QAEXXZ) referenced in function "public: int __thiscall VotingMachine::castVote(class CString &)" (?castVote@VotingMachine@@QAEHAAVCString@@@Z)
+     1>D:\Visual Studio n other docs\Visual Studio 2012\Projects\programs\homeTask 10(Task 1) candidate voting\Debug\voting.exe : fatal error LNK1120: 4 unresolved externals
+     1>Done Building Project "D:\Visual Studio n other docs\Visual Studio 2012\Projects\programs\homeTask 10(Task 1) candidate voting\voting\voting.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.26

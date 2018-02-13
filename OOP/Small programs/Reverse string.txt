@@ -1,0 +1,28 @@
+#include <iostream> 
+#include <algorithm> 
+using namespace std;
+int main()
+{
+	char str[] = "abcdefghijklmnopqrstuvwxyz";
+	char* beg = str;
+	char* end = str + sizeof str;
+	--end; // account for the terminating null 
+	reverse(beg, end);
+	cout << str << '\n';
+}
+char str[] = "abcdefghijklmnopqrstuvwxyz";
+char temp;
+char *start, *end;
+
+start = str;//str is the array name and without the index braces[] is the address to the beginning of the array, so start is pointing to the address where 'a' is 
+
+end = &str[strlen(str) - 1];//end now points to where z is 
+
+while (end>start)//when this fails 
+{
+	temp = *start;//save the char value pointed to by start 
+	*start = *end;//begin reversing the chars 
+	*end = temp;//finish reversing the chars 
+	start++;//move forward the start pointer to the next char 
+	end--;//move backwards the end pointer 
+}

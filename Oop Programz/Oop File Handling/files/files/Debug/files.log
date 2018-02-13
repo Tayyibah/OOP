@@ -1,0 +1,28 @@
+﻿Build started 9/7/2015 11:34:09 AM.
+     1>Project "D:\Visual Studio n other docs\Visual Studio 2012\Projects\File Handling\files\files\files.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp "print using get(ch).cpp" "remove any character n show all others.cpp"
+         remove any character n show all others.cpp
+     1>d:\visual studio n other docs\visual studio 2012\projects\file handling\files\files\remove any character n show all others.cpp(15): warning C4101: 'num' : unreferenced local variable
+         print using get(ch).cpp
+         Source.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Visual Studio n other docs\Visual Studio 2012\Projects\File Handling\files\Debug\files.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Visual Studio n other docs\Visual Studio 2012\Projects\File Handling\files\Debug\files.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Visual Studio n other docs\Visual Studio 2012\Projects\File Handling\files\Debug\files.lib" /MACHINE:X86 "Debug\castng n read wrte.obj"
+         Debug\flags.obj
+         "Debug\remove any character n show all others.obj"
+         "Debug\Show upto where u want from file.obj"
+         "Debug\remove ch n replace with endl.obj"
+         "Debug\print using get(ch).obj"
+         "Debug\put(ch).obj"
+         "Debug\enter n use setpre,fixed,array,n setw().obj"
+         "Debug\copy paste one file contents to other.obj"
+         "Debug\read n write in binary mode.obj"
+         "Debug\seekg and seekp.obj"
+         Debug\Source.obj
+         files.vcxproj -> D:\Visual Studio n other docs\Visual Studio 2012\Projects\File Handling\files\Debug\files.exe
+     1>Done Building Project "D:\Visual Studio n other docs\Visual Studio 2012\Projects\File Handling\files\files\files.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.43

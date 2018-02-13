@@ -1,0 +1,162 @@
+#include<iostream>
+using namespace std;
+class Set 
+{
+private :
+	int * data;
+	int noOfElements;
+	int capacity;
+	int i;
+	int isValidIndex(int index)
+	{
+		if (index>=0 && index <capacity)
+		{
+			return 1;
+		}
+		else 
+		{
+			return 0;
+		}
+	}
+	
+	bool isSetFull()
+	{
+		if (noOfElements<capacity)
+			return true;
+		else
+			return false;
+	}
+	bool isSetEmpty()
+	{
+		if(noOfElements!=0)
+			return true;
+			else
+			return false;
+	}
+	int findIndex(int element)
+	{
+		int i=0;
+		while(i<noOfElements && data[i]!=element)
+		{
+			i++;
+		} 		
+	
+	}
+
+	void copy (int * dest, int * source)
+	{
+		int i=0;
+		while (i<noOfElements)
+		{
+			dest [i]= source[i];
+		}
+	}
+public:
+	Set(int cap=5)
+	{
+		if (cap<=0)
+		{
+			capacity=0;
+			noOfElements=0;
+			data=0;
+		}
+		else
+		{
+			capacity=cap;
+			noOfElements=0;
+			data=new int [capacity];
+		}
+	}
+	~Set()
+	{
+		if (!data)
+			return;
+		delete [] data;
+		data=0;
+		capacity=0;
+		noOfElements=0;
+	}
+	void insert (int element)
+	{
+		if (isSetFull())
+		{
+			int ind=findIndex(element);
+			if(isValidIndex(ind))
+			{
+				data[noOfElements++]=element;
+
+			}
+		}
+		
+	}
+	void remove(int element)
+	{
+		if (isSetEmpty())
+		{
+			int ind= findIndex(element);
+			if (isValidIndex(ind))
+			{
+				data[ind]=data[noOfElements-1];
+				noOfElements--;
+			}
+		}
+	}
+	void print()
+	{
+		cout<<"data in set is = {";
+		for(int index=0;index<noOfElements;index++)
+		{
+			cout<<data[index]<<",";
+		}
+		cout<<"\b}";
+	}
+	int getCardinality()
+	{
+		return noOfElements;
+	}
+	int isMember (int val)
+	{
+		int i=0;
+		for (int i=0; i<noOfElements; i++)
+		{
+			if (data[i]==val)
+				return 1;
+			
+		}
+		return 0;
+	}
+	void resize (int newCapacity)
+		{
+			
+		int * temp=new int [newCapacity];
+		int i=0;
+		while (i<newCapacity && i<noOfElements)
+		{
+			temp[i]=data[i];
+			i++;
+		}
+		delete [] data;
+		data=temp;
+		capacity=newCapacity;
+		}
+	Set (Set & ref)
+	{
+		if (ref .data==0)
+		{
+			data=0;
+			return;
+		}
+		data=new int [ref.capacity];
+	   copy(data, ref.data);
+		capacity=ref.capacity;
+		noOfElements=ref.noOfElements;
+	}
+	
+};
+int main()
+{
+	Set s1;
+	Set s2=s1;
+	s2.print();
+	return 0;
+}

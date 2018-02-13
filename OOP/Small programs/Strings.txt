@@ -1,0 +1,65 @@
+#include<iostream>
+using namespace std;
+char * toTitle(char * str);
+int getLength( const char * const str) ;
+void display(char * str) ;
+char  makeUpper(char data);
+char makeLower(char data);
+int main()
+{
+	char * str="mint TeXt ediTor";
+	toTitle(str);
+	display(str) ;
+	return 0;
+}
+int getLength( const char * const str) 
+{
+	int i=0;
+	while(str[i]!='\0')
+	{
+		i++;
+	}
+
+	return i;
+}
+char * toTitle(char * str)
+{
+	for(int i=0;str[i]!='\0';i++)
+	{
+		str[i]=makeUpper(str[i]);
+		i++;
+		while(str[i]!=' ')
+		{
+			str[i]=makeLower(str[i]);
+			i++;
+		}
+	}
+	return str;
+}
+void display(char * str) 
+{
+	for(int i=1;i<getLength(str);i++)
+	{
+		cout<<str[i]<<" ";
+	}
+	cout<<endl;
+}
+
+char  makeUpper(char data)
+{
+	int i = 0 ;
+	if (data >= 'a' && data <= 'z')
+	{
+		data = data - 32 ;	
+	}
+	return data;
+}
+char makeLower(char data)
+{
+	int i = 0 ;
+	if (data  >= 'A' && data <= 'Z')
+	{
+		data  = data + 32 ;
+	}
+	return data;
+}

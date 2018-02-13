@@ -1,0 +1,122 @@
+#include<iostream>
+using namespace std;
+
+class Time
+{
+private:
+	int hour;
+	int minute;
+	int second;
+
+public:
+	void setHour ( int h )
+	{
+		if(h>=0&&h<=23)
+			hour=h;
+	}
+	void setMinute ( int m )
+	{
+		if(m>=0&&m<60)
+			minute=m;
+	}
+	void setSecond ( int s )
+	{
+		if(s>=0&&s<60)
+			second=s;
+	}
+	void setTime ( int h, int m, int s )
+	{
+		setHour ( h );
+		setMinute ( m );
+		setSecond(s);
+	}
+
+	int getHour ( )
+	{
+		return hour;
+	}
+	int getMinute ( )
+	{
+		return minute;
+	}
+	int getSecond ( )
+	{
+		return second;
+	}
+	void printTwentyFourHourFormat()// print universal time
+	{
+		getHour ();
+		getMinute ();
+		getSecond();
+	}
+	void printTwelveHourFormat()   // print standard time
+	{
+		getHour ();
+		if(hour>12)
+			hour=hour-12;
+		else
+			hour=hour;
+		getMinute();
+		getSecond() ;
+	}
+	void incSec( int i= 1 )  // increment in the second of the calling time object // default increment is 1
+	{
+		second=second+i;
+		if(second>=60)
+		{
+			minute =minute+second/60;
+		}
+		if(minute>=60)
+		{
+			hour=hour+minute /60;
+		}
+		if(hour>23)
+		{
+			hour=hour%24;
+			minute=minute%60;
+			second=second%60;
+		}
+
+	}
+	void incMin( int i= 1 )   // increment in the minute of the calling time object // default increment is 1
+	{
+			minute=minute+i;
+		if(minute>=60)
+		{
+			minute=minute+second/60;
+		}
+		if(hour>23)
+		{
+			hour=hour%24;
+		}
+
+		minute=minute%60;
+	}
+	void incHour( int i=1 )  // increment in the hour of the calling time object // default increment is 1
+	{
+			hour=hour+i;
+		if(hour>23)
+		{
+			hour=hour%24;
+		}
+	}
+};
+
+
+	int main()
+{
+	Time t;
+	t.setTime(4 , 5 , 6);
+	cout<<t.getHour()<<":"<<t.getMinute()<<":"<<t.getSecond()<<endl;
+	t.printTwentyFourHourFormat();
+	cout<<"24 hour format:"<<t.getHour()<<":"<<t.getMinute()<<":"<< t.getSecond()<<endl;
+	t.printTwelveHourFormat();
+	cout<<"12 hour format :"<<t.getHour()<<":"<<t.getMinute()<<":"<< t.getSecond()<<endl;
+	t.incHour(6);
+	cout<<"Increment in hour :"<<t.getHour()<<":"<<t.getMinute()<<":"<<t.getSecond()<<endl;
+	t.incSec(5);
+	cout<<"Increment in sec:"<<t.getHour()<<":"<<t.getMinute()<<":"<<t.getSecond()<<endl;
+	t.incMin(5);
+	cout<<"Increment in minute is :"<<t.getHour()<<":"<<t.getMinute()<<":"<<t.getSecond()<<endl;
+	return 0;
+}

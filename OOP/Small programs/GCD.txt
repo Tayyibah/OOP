@@ -1,0 +1,29 @@
+int Math::calcGCD(int numerator, int denominator)
+{
+	 int small;
+	 if (numerator<denominator)
+	 {
+		 small=numerator;
+		 
+	 }
+	 else if  (numerator>denominator)
+	 {
+		 small=denominator;
+
+	 }
+	 else 
+	 {
+		 numerator=1;
+		 denominator=1;
+	 }
+	 for (int i=2; i<small; i++)
+	 {
+		 if (numerator%i==0 && denominator%i==0)
+		 {
+			 numerator=numerator/i;
+			 denominator=denominator/i;
+			 i=1;
+		 }
+	 }
+	 return small;
+}

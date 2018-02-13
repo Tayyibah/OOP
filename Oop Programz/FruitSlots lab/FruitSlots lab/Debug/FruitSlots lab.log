@@ -1,0 +1,68 @@
+﻿Build started 10/17/2015 12:33:21 AM.
+     1>Project "D:\Visual Studio n other docs\Visual Studio 2012\Projects\Oop\FruitSlots lab\FruitSlots lab\FruitSlots lab.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt driver.cpp FruitSlats.cpp
+         FruitSlats.cpp
+         driver.cpp
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(7): error C2143: syntax error : missing ';' before '<'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(7): error C2059: syntax error : '<'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(8): error C2143: syntax error : missing ';' before '{'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(8): error C2447: '{' : missing function header (old-style formal list?)
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(30): error C2953: 'FruitSlats<T,T,T>' : class template has already been defined
+                 d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(17) : see declaration of 'FruitSlats<T,T,T>'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(38): error C2953: 'FruitSlats<T,T,T>' : class template has already been defined
+                 d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(17) : see declaration of 'FruitSlats<T,T,T>'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(39): error C2991: redefinition of template parameter 'S'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(40): error C2065: 'T' : undeclared identifier
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(41): error C2923: 'FruitSlats' : 'T' is not a valid template type argument for parameter 'R'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(46): error C2976: 'FruitSlats' : too few template arguments
+                 d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(41) : see declaration of 'FruitSlats'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(47): error C2991: redefinition of template parameter 'T'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(54): error C2976: 'FruitSlats' : too few template arguments
+                 d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(49) : see declaration of 'FruitSlats'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(54): error C2991: redefinition of template parameter 'R'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(61): error C2976: 'FruitSlats' : too few template arguments
+                 d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(56) : see declaration of 'FruitSlats'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(61): error C2991: redefinition of template parameter 'S'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(67): error C2976: 'FruitSlats' : too few template arguments
+                 d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(63) : see declaration of 'FruitSlats'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(68): error C2991: redefinition of template parameter 'S'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(74): error C2976: 'FruitSlats' : too few template arguments
+                 d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(70) : see declaration of 'FruitSlats'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(75): error C2991: redefinition of template parameter 'T'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(81): error C2976: 'FruitSlats' : too few template arguments
+                 d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(77) : see declaration of 'FruitSlats'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(81): error C2991: redefinition of template parameter 'S'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(87): error C2976: 'FruitSlats' : too few template arguments
+                 d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(83) : see declaration of 'FruitSlats'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(88): error C2991: redefinition of template parameter 'R'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(95): error C2976: 'FruitSlats' : too few template arguments
+                 d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(90) : see declaration of 'FruitSlats'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(96): error C2991: redefinition of template parameter 'R'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(103): error C2976: 'FruitSlats' : too few template arguments
+                 d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\fruitslats.h(98) : see declaration of 'FruitSlats'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\driver.cpp(16): error C2079: 's' uses undefined class 'FruitSlats'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\driver.cpp(21): error C2079: 's' uses undefined class 'FruitSlats'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\driver.cpp(26): error C2079: 's' uses undefined class 'FruitSlats'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\driver.cpp(31): error C2079: 's' uses undefined class 'FruitSlats'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\driver.cpp(36): error C2079: 's' uses undefined class 'FruitSlats'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\driver.cpp(38): error C2181: illegal else without matching if
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\driver.cpp(40): error C2079: 's' uses undefined class 'FruitSlats'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\driver.cpp(45): error C2079: 's' uses undefined class 'FruitSlats'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\driver.cpp(50): error C2079: 's' uses undefined class 'FruitSlats'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\driver.cpp(56): error C2079: 's' uses undefined class 'FruitSlats'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\driver.cpp(62): error C2079: 's' uses undefined class 'FruitSlats'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\driver.cpp(67): error C2079: 's' uses undefined class 'FruitSlats'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\driver.cpp(72): error C2079: 's' uses undefined class 'FruitSlats'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\driver.cpp(77): error C2079: 's' uses undefined class 'FruitSlats'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\driver.cpp(82): error C2079: 's' uses undefined class 'FruitSlats'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\driver.cpp(88): error C2079: 's' uses undefined class 'FruitSlats'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\driver.cpp(93): error C2079: 's' uses undefined class 'FruitSlats'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\driver.cpp(98): error C2079: 's' uses undefined class 'FruitSlats'
+     1>d:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\driver.cpp(102): fatal error C1075: end of file found before the left brace '{' at 'd:\visual studio n other docs\visual studio 2012\projects\oop\fruitslots lab\fruitslots lab\driver.cpp(12)' was matched
+         Generating Code...
+     1>Done Building Project "D:\Visual Studio n other docs\Visual Studio 2012\Projects\Oop\FruitSlots lab\FruitSlots lab\FruitSlots lab.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:04.62
